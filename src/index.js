@@ -96,6 +96,7 @@ async function createX() {
 
   console.log(' ');
   console.log(chalk.cyanBright(` cd ${npmName}`));
+  console.log(chalk.cyanBright(' npm install'));
   console.log(' ');
 }
 
