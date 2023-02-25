@@ -93,6 +93,10 @@ async function createX() {
   console.log('│   ├── config.js    # template profile');
   console.log('│   ├── index.js  ');
   console.log('├── package.json  ');
+
+  console.log(' ');
+  console.log(chalk.cyanBright(` cd ${npmName}`));
+  console.log(' ');
 }
 
 createX();
