@@ -74,7 +74,7 @@ async function createX() {
   // 修改参数
   const indexPath = path.resolve(dirPath, 'index.js');
   await changeFileContent(indexPath, (content) => {
-    return content.replace('$NAME', npmName);
+    return content.replace('$NAME', initCommand);
   });
 
   const pkgJsonPath = path.resolve(dirPath, 'package.json');
