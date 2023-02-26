@@ -4,6 +4,9 @@ import inquirer from 'inquirer';
 import path from 'path';
 import chalk from 'chalk';
 
+import url from 'url';
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+
 // 检测目录
 async function checkTargetDir(dirPath) {
   const isExist = await fs.exists(dirPath);
@@ -88,9 +91,10 @@ async function createX() {
   // 给出提示
   console.log(chalk.greenBright('Project creation completed'));
   console.log(' ');
-  console.log('├── local            # local template directory');
+  console.log('├── bin              ');
+  console.log('├── local               # local template directory');
   console.log('├── src');
-  console.log('│   ├── config.js    # template profile');
+  console.log('│   ├── templates.js    # template profile');
   console.log('│   ├── index.js  ');
   console.log('├── package.json  ');
 
