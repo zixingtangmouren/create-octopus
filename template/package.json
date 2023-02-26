@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "$CRAETE_BIN": "bin/index.js"
   },
@@ -13,6 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tangjs/octopus": "^1.0.0"
+    "@tangjs/octopus": "^2.0.0"
   }
 }
