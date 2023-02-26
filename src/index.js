@@ -75,7 +75,7 @@ async function createX() {
   await fs.copy(path.resolve(__dirname, '../template'), dirPath);
 
   // 修改参数
-  const indexPath = path.resolve(dirPath, 'index.js');
+  const indexPath = path.resolve(dirPath, './src/index.js');
   await changeFileContent(indexPath, (content) => {
     return content.replace('$NAME', initCommand);
   });
