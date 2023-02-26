@@ -1,8 +1,8 @@
-const { getNpmInfo } = require('ice-npm-utils');
-const fs = require('fs-extra');
-const inquirer = require('inquirer');
-const path = require('path');
-const chalk = require('chalk');
+import { getNpmInfo } from 'ice-npm-utils';
+import fs from 'fs-extra';
+import inquirer from 'inquirer';
+import path from 'path';
+import chalk from 'chalk';
 
 // 检测目录
 async function checkTargetDir(dirPath) {
