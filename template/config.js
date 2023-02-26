@@ -5,4 +5,6 @@ const { defineTemplate } = require('@tangjs/octopus');
 //   description: 'simple-demo',
 // });
 
+// module.exports = [simpleDemo];
+
 module.exports = [];
