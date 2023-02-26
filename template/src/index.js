@@ -13,6 +13,6 @@ createOctopus({
   name: '$NAME', // 工具的名字
   description: '',
   version,
-  templatesDir: path.resolve(__dirname, './local'), // 模板目录
+  templatesDir: path.resolve(__dirname, '../local'), // 模板目录
   templates,
 });
